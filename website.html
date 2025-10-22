@@ -1,0 +1,42 @@
+<!-- In this lesson
+ 1. Reviewed basics of HTML and CSS
+ 2. load JavaScript inside HTML
+ 3. how to create comments
+ 4. console.log usage -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style>
+      /* This is a comment */
+      button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- this is a comment -->
+    <h1>My Website</h1>
+    <button title="Good Job!" onclick="alert('Good Job!')">Click me</button>
+
+    <script>
+      // This is a single comment.
+      /* This is a
+      multi-line comment. */
+      alert("Welcome to my website!");
+
+      console.log("Page Loaded");
+    </script>
+  </body>
+</html>
