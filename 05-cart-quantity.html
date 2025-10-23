@@ -15,7 +15,10 @@
     </button>
     <button
       onclick=" 
-    cartQuantity = cartQuantity + 1;
+    // Shortcut for reassigning variable.
+    // cartQuantity = cartQuantity + 1;
+    // cartQuantity += 1;
+    cartQuantity++;
     console.log(`cartQuantity: ${cartQuantity}`);
     "
     >
@@ -23,7 +26,9 @@
     </button>
     <button
       onclick="
-    cartQuantity = cartQuantity + 2;
+    // cartQuantity = cartQuantity + 2;
+    cartQuantity += 2;
+   
     console.log(`cartQuantity: ${cartQuantity}`)
     "
     >
@@ -31,7 +36,8 @@
     </button>
     <button
       onclick="
-      cartQuantity = cartQuantity + 3;
+    //   cartQuantity = cartQuantity + 3;
+    cartQuantity += 3;
       console.log(`cartQuantity: ${cartQuantity}`);
     "
     >
@@ -49,6 +55,9 @@
 
     <!-- script -->
     <script>
+      // Variable Re-assignment Shortcuts
+      // +=, -=, *=, /=, ++, --, %=
+      //   camelCase notation;
       let cartQuantity = 0;
     </script>
   </body>
