@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      /*
       const product = {
         name: "socks",
         price: 1090,
@@ -21,12 +22,27 @@
 
       product.newProperty = true;
       console.log(product);
-      /*
+
+      delete product.newProperty;
+      console.log(product);
+
       Why use objects
       - Objects make our code organized
       - Let us group mutlitple values together
       - Let us use multiple values together
       */
+
+      const product2 = {
+        name: "shirt",
+        ["delivery-time"]: "1 Day",
+      };
+
+      console.log(product2);
+      console.log(product2.name); //Dot notation
+
+      console.log(product2["name"]); //Brtake notation
+      console.log(product2["delivery-time"]); //undefined
+      // Lets us use properties that don't work with dot notation
     </script>
   </body>
 </html>
