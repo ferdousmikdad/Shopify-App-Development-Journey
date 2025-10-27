@@ -34,7 +34,15 @@
 
       const product2 = {
         name: "shirt",
-        ["delivery-time"]: "1 Day",
+        "delivery-time": "1 Day",
+        rating: {
+          //Nasted Object
+          stars: 4.5,
+          count: 87,
+        },
+        fun: function () {
+          console.log("function inside object");
+        },
       };
 
       console.log(product2);
@@ -43,6 +51,12 @@
       console.log(product2["name"]); //Brtake notation
       console.log(product2["delivery-time"]); //undefined
       // Lets us use properties that don't work with dot notation
+
+      console.log(product2.rating.count);
+
+      product2.fun();
+
+      console.log(typeof console.log);
     </script>
   </body>
 </html>
