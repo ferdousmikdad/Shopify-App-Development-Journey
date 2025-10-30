@@ -35,8 +35,11 @@
   <body>
     <!-- Scripts -->
     <script>
+      // Not recomanded
       String(25);
       console.log("25" - 5);
+      console.log("25" + 5);
+      // Always do math using Number not with String
 
       function handleCostKeydowns(event) {
         console.log(event.key);
